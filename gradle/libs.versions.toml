@@ -16,6 +16,7 @@ retrofit = "3.0.0"
 gson = "2.13.1"
 room = "2.7.2"
 hiltNavigation = "1.2.0"
+mockk = "1.14.5"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -46,6 +47,8 @@ room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
 room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
 room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
 hilt-navigation = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigation" }
+mockk = {module = "io.mockk:mockk", version.ref = "mockk"}
+coroutines-test = {module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlin-coroutines"}
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
