@@ -33,7 +33,7 @@ fun InvestmentDetails(
     onPnLClicked: () -> Unit = {}
 ) {
     var rotateIcon by remember {
-        mutableFloatStateOf(0F)
+        mutableFloatStateOf(180F)
     }
     Row(
         modifier = modifier,
