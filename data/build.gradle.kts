@@ -8,6 +8,7 @@ plugins {
 android {
     namespace = "com.example.data"
     compileSdk = 36
+    android.buildFeatures.buildConfig =  true
 
     defaultConfig {
         minSdk = 24
@@ -17,6 +18,10 @@ android {
     }
 
     buildTypes {
+        debug {
+            buildConfigField("String", "BASE_URL", "\"https://35dee773a9ec441e9f38d5fc249406ce.api.mockbin.io/\"")
+        }
+
         release {
             isMinifyEnabled = false
             proguardFiles(
@@ -26,11 +31,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_21
-        targetCompatibility = JavaVersion.VERSION_21
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "21"
+        jvmTarget = "17"
     }
 }
 

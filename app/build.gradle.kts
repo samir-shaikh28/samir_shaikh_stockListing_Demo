@@ -9,7 +9,6 @@ plugins {
 android {
     namespace = "com.example.samir_shaikh_demo"
     compileSdk = 36
-    android.buildFeatures.buildConfig =  true
 
     defaultConfig {
         applicationId = "com.example.samir_shaikh_demo"
@@ -23,9 +22,6 @@ android {
 
     buildTypes {
 
-        debug {
-            buildConfigField("String", "BASE_URL", "https://35dee773a9ec441e9f38d5fc249406ce.api.mockbin.io/")
-        }
         release {
             isMinifyEnabled = false
             proguardFiles(
