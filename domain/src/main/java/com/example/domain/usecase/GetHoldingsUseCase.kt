@@ -5,8 +5,9 @@ import com.example.domain.model.HoldingSummary
 import com.example.domain.repository.HoldingsRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
+import javax.inject.Inject
 
-class GetHoldingsUseCase(
+class GetHoldingsUseCase @Inject constructor(
     private val repository: HoldingsRepository,
     private val mapper: HoldingSummaryMapper
 ) {

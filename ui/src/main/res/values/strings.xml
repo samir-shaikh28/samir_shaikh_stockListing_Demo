@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="holdings">Portfolio</string>
+    <string name="current_value">Current Value*</string>
+    <string name="total_investment">Total Investment*</string>
+    <string name="ltp">LTP:\u0020</string>
+    <string name="pl">P&amp;L:\u0020</string>
+    <string name="net_qty">NET QTY:\u0020</string>
+    <string name="pnl">Profit &amp; Loss*</string>
+    <string name="todays_pnl">Today\'s Profit &amp; Loss*</string>
+</resources>

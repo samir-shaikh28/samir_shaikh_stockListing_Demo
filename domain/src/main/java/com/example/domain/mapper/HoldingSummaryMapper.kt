@@ -3,10 +3,11 @@ package com.example.domain.mapper
 import com.example.domain.model.Holding
 import com.example.domain.model.HoldingSummary
 import com.example.domain.model.InvestmentInfo
-import com.example.domain.util.roundToTwoDecimals
 import com.example.domain.util.orZero
+import com.example.domain.util.roundToTwoDecimals
+import javax.inject.Inject
 
-class HoldingSummaryMapper {
+class HoldingSummaryMapper @Inject constructor() {
 
     fun map(holdingList: List<Holding>): HoldingSummary {
         val currentValue = getCurrentValue(holdingList)

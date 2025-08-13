@@ -1,4 +1,4 @@
-package com.example.samir_shaikh_demo.ui.theme
+package com.example.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
@@ -9,3 +9,7 @@ val Pink80 = Color(0xFFEFB8C8)
 val Purple40 = Color(0xFF6650a4)
 val PurpleGrey40 = Color(0xFF625b71)
 val Pink40 = Color(0xFF7D5260)
+
+val PlasMid = Color(0xFF123262)
+val GreenC = Color(0xFF54B181)
+val RedC = Color(0xFFDD4D50)
