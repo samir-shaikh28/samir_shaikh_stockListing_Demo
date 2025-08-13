@@ -34,12 +34,13 @@ android {
         sourceCompatibility = JavaVersion.VERSION_21
         targetCompatibility = JavaVersion.VERSION_21
     }
-    kotlinOptions {
-        jvmTarget = "21"
-    }
     buildFeatures {
         compose = true
     }
+}
+
+kotlin {
+    jvmToolchain(21) // Specify the JDK version you want to target
 }
 
 dependencies {

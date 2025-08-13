@@ -3,6 +3,7 @@ package com.example.data.di
 import com.google.gson.GsonBuilder
 import com.example.data.BuildConfig
 import com.example.data.network.HoldingApiService
+import com.google.gson.Strictness
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -30,7 +31,7 @@ object NetworkModule {
     @Provides
     @Singleton
     fun provideGsonConverterFactory(): GsonConverterFactory {
-        return GsonConverterFactory.create(GsonBuilder().setLenient().create())
+        return GsonConverterFactory.create(GsonBuilder().setStrictness(Strictness.LENIENT).create())
     }
 
     @Provides
